@@ -1,0 +1,35 @@
+ Se considera descrierea urmatorului sistem de demonstratii:
+O teorema este o propozitie care permite asertarea uneia sau mai multor propozitii numite concluzii, in cazul
+in care una sau mai multe propozitii, numite ipoteze sunt adevarate. O axioma este asemanatoare cu o teorema care
+nu contine ipoteze. Ea este formata doar din mai multe concluzii, presupuse a fi adevarate.
+Un sistem de demonstratii este format din una sau mai multe teoreme si axiome. El este consistent daca nu
+contine teoreme contradictorii. Doua teoreme se considera contradictorii daca au aceleasi ipoteze, dar concluzii
+contradictorii (de exemplu, x si !x).
+O afirmatie are structura sintactica a unei teoreme. Ea poate fi demonstrata ca fiind adevarata, daca plecand
+de la propozitiile din ipoteza si folosind una sau mai multe teoreme au axiome ale sistemului, se pot afirma
+propozitiile din concluzie.
+Secventa ordonata de teoreme utilizate pentru demonstrarea concluziilor unei afirmatii se numeste linie de
+rationament.
+Sa se scrie o aplicatie Ptython orientata pe obiecte care gestioneaza un sistem de demonstratii si permite
+urmatoarele operatii:
+- Initializarea sistemului de demonstratii
+- Determinarea consistentei sistemului de demonstratii
+- Detereminarea daca o anumita afirmatie se poate demonstra. In caz afirmativ, sa se afiseze liniile de
+rationament ale demonstratiei, precum si rationamentul cel mai scurt
+- Adaugarea unor noi teoreme, precum si stergerea unora existente
+- Adaugarea unei afirmatii adevarate ca o noua teorema
+Exemplu. Se considera teoremele si axiomele urmatoare, in care propozitiile sunt notate cu litere:
+a1: concluzii d, e
+a2: concluzii w
+t1: ipoteze i; concluzii a, b, c
+t2: ipoteze a, b; concluzii x
+t3: ipoteze b; concluzii y
+t4: ipoteze c; concluzii z
+t5: ipoteze c, z; concluzii t
+t6: ipoteze a; concluzii o
+t7: ipoteze x; concluzii o
+t8: ipoteze y; concluzii o
+t9: ipoteze t; concluzii o
+Sa se determine daca afirmatia:
+ipoteze i; concluzii o
+este demonstrabila si eventualele linii de rationament, precum si linia minima
